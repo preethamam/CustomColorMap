@@ -11,3 +11,4 @@ Creates a custom color map given the RGB triplet array.
 MATLAB
 
 # MATLAB Central
+[![View Custom color map on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/96977-custom-color-map)
