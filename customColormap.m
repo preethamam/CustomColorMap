@@ -19,6 +19,8 @@ function cmap = customColormap(colorArray, n, method)
 %                                          1 0 0]; [blue, green, yellow, red]
 %         n             - linear divisions between colors (number of colors)
 %                         integer scalar > 1 - default n = 50
+%                         n = 1 --> input color array
+%                         (optional)
 %         method        - Interpolation method - 'linear' (default) 
 %                         | 'nearest' | 'cubic' | 'spline' | 'makima'
 %                         (optional)
@@ -39,15 +41,19 @@ if (nargin < 2)
     method = 'linear';
 end
 
-% Mesh of indices
-maxGridValue = n*(size(colorArray,1)-1);
-[X,Y] = meshgrid(1:3,1:maxGridValue);  
+if n > 1
+    % Mesh of indices
+    maxGridValue = n*(size(colorArray,1)-1);
+    [X,Y] = meshgrid(1:3,1:maxGridValue);  
 
-xx = X([1, n:n:maxGridValue],:);
-yy = Y([1, n:n:maxGridValue],:);
+    xx = X([1, n:n:maxGridValue],:);
+    yy = Y([1, n:n:maxGridValue],:);
 
-% Interpolate colormap
-cmap = interp2(xx, yy, colorArray, X, Y, method); 
+    % Interpolate colormap
+    cmap = interp2(xx, yy, colorArray, X, Y, method); 
+else
+    cmap = colorArray;
+end
 
 end
 
