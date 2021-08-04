@@ -23,7 +23,7 @@ function cmap = customColormap(colorArray, n, method)
 %                         | 'nearest' | 'cubic' | 'spline' | 'makima'
 %                         (optional)
 % 
-% Outputs: imageCylindrical - Warpped image to cylindrical coordinates
+% Outputs: cmap - interpolated color map
 
 % Input arguments check
 if (nargin < 1)
