@@ -17,7 +17,7 @@ function cmap = customColormap(colorArray, n, method)
 %                                          0 1 0
 %                                          1 1 0 
 %                                          1 0 0]; [blue, green, yellow, red]
-%         n             - linearDivisions - integer scalar > 1 - default n = 50
+%         n             - number of colors - integer scalar > 1 - default n = 50
 %                         (optional)
 %         method        - Interpolation method - 'linear' (default) 
 %                         | 'nearest' | 'cubic' | 'spline' | 'makima'
