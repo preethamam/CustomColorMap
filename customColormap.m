@@ -40,10 +40,14 @@ if (nargin < 2)
 end
 
 % Mesh of indices
-[X,Y] = meshgrid(1 : 3, 1 : 3*n);  
+maxGridValue = n*(size(colorArray,1)-1);
+[X,Y] = meshgrid(1:3,1:maxGridValue);  
+
+xx = X([1, n:n:maxGridValue],:);
+yy = Y([1, n:n:maxGridValue],:);
 
 % Interpolate colormap
-cmap = interp2(X([1, n:n:3*n],:),Y([1, n:n:3*n],:), colorArray, X, Y, method); 
+cmap = interp2(xx, yy, colorArray, X, Y, method); 
 
 end
 
