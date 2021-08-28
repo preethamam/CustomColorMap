@@ -1,5 +1,5 @@
 # Introduction
-Creates a custom color map given the RGB triplet array.
+Creates a custom colormap given the RGB triplet array.
 
 # Quick Pipeline Visualization
 ## Example: Colormap from [Blue green yellow red] color array.
