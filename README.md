@@ -1,4 +1,6 @@
 # Introduction
+[![View Custom color map on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/96977-custom-color-map) [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=preethamam/CustomColorMap)
+
 Creates a custom colormap given the RGB triplet array.
 
 # Quick Pipeline Visualization
@@ -10,7 +12,5 @@ Creates a custom colormap given the RGB triplet array.
 # Requirements
 MATLAB
 
-# MATLAB Central
-[![View Custom color map on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/96977-custom-color-map)
-
+# Feedback
 Please rate and provide feedback for the further improvements.
